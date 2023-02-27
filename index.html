@@ -73,7 +73,7 @@
 							<button type="button" class="btn-view dashboard active">
 								<span class="material-icons">dashboard</span>
 							</button>
-							<button type="button"  class="btn-view list_alt">
+							<button type="button"  class="btn-view list-alt">
 								<span class="material-icons"> list_alt </span>
 							</button>
 							<a href="#" class="btn btn-add-device">
@@ -82,7 +82,7 @@
 						</div>
 					</div>
 					<div class="clearfix">&nbsp;</div>
-					<div class="row row-device">
+					<div class="row row-device  ">
 						<div class="col-md-6 col-12">
 							<div class="box-device"> 
 								<img src="images/16720417444334.png" alt="" class="img">
@@ -330,6 +330,14 @@
 		$('.box-device').click(function(){       
 			$(this).toggleClass("active");     
 		});
+		$('.btn-view').click(function(){        
+			$('.btn-view').removeClass("active");       
+			$('.row-device').toggleClass("list-alt");  
+			$(this).addClass("active");     
+		});
+
+
+		
 	</script>
  
 </body>
