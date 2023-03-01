@@ -1213,6 +1213,17 @@ section.main-fluid{
     border-radius: 6px;
     width: 100%;
   }
+  section.main-fluid {
+    padding: 99px 0px 55px 0px;
+    background: #fff;
+    min-height: calc(100vh - 80px);
+  }
+  .tab-pane p span{
+    width: 40%;
+    float: left;
+  }
+
+
 }
 
 
