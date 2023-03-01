@@ -16,6 +16,53 @@
 </head>
 <body>
 	 
+	<div class="menu-mb pc-x"> 
+		<div class="closex"> 
+			<span class="material-icons">
+				close
+			</span>
+		</div>
+		<div class="end-in">
+			<h5>Subscription end in</h5>
+			<h5><span>193</span> days</h5>
+		</div>
+		<div class="menu-left">
+			<ul class="menu"> 
+				<li>
+					<span class="material-icons">
+						account_circle
+					</span>
+					<a href="profile.html">Profile</a>
+				</li>
+				<li class="active">
+					<span class="material-icons">
+						devices
+					</span>
+					<a href="device-detail.html">Device</a>
+				</li>
+				<li>
+					<span class="material-icons">
+						contactless
+					</span>
+					<a href="#">Connect</a>
+				</li>
+				<li>
+					<span class="material-icons">
+						date_range
+					</span>
+					<a href="#">Subscription</a>
+				</li>
+				<li>
+					<span class="material-icons">
+						analytics
+					</span>
+					<a href="#">Status</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+
 	<header class="fixed-top"> 
 		<div class="row">
 			<div class="col-md-6">
@@ -39,6 +86,16 @@
 					</a>  
 				</div>
 			</div>
+		</div>
+		<div class="menu-bars pc-x"> 
+			<span class="material-icons">
+				menu
+			</span>
+		</div>
+		<div class="menu-logout pc-x"> 
+			<span class="material-icons">
+				login
+			</span>
 		</div>
 	</header>
 
@@ -112,10 +169,10 @@
 						<hr>
 						<div class="form-group row mb-1" >
 							<label class="col-md-2">Account::</label>
-							<div class="col-md-8 icons-text">
+							<div class="col-8 icons-text">
 								<span class="material-icons text-success"> check_circle_outline </span> <p>myemail@examle.com </p>
 							</div> 
-							<div class="col-md-2  text-right">
+							<div class="col-2  text-right">
 								<button class="btn btn-pro">Change</button>
 							</div> 
 						</div>
@@ -162,15 +219,13 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script> 
 	
 	<script>
-		$('.box-device').click(function(){       
-			$(this).toggleClass("active");     
+ 
+		$('.menu-bars').click(function(){    
+			$(".menu-mb").addClass("active" , 300);  
 		});
-		$('.btn-view').click(function(){        
-			$('.btn-view').removeClass("active");       
-			$('.row-device').toggleClass("list-alt");  
-			$(this).addClass("active");     
+		$('.closex').click(function(){    
+			$(".menu-mb").removeClass("active" , 300);  
 		});
-
 
 		
 	</script>

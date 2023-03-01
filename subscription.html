@@ -15,15 +15,28 @@
 	
 </head>
 <body>
-	 
+	  
+
+	
+
+
 	<header class="fixed-top"> 
 		<div class="row">
 			<div class="col-md-6">
 				<a href="#"><img src="images/logo.png" class="logo" alt="logo"></a>  
-			</div>
+			</div> 
+		</div>
+		<div class="menu-bars pc-x"> 
+			<span class="material-icons">
+				menu
+			</span>
+		</div>
+		<div class="menu-logout pc-x"> 
+			<span class="material-icons">
+				login
+			</span>
 		</div>
 	</header>
-
 	<main>
 		 
 
@@ -83,10 +96,10 @@
 				<div class="row">
 					<div class="col-md-6 mb-4">
 						<div class="row">
-							<div class="col-md-5">
-								<img src="images/image1.png" class="img-fluid" alt="">
+							<div class="col-md-5 col-12">
+								<img src="images/image1.png" class="img-fluid d-block m-auto" alt="">
 							</div>
-							<div class="col-md-7"> 
+							<div class="col-md-7 col-12"> 
 								<ul>
 									<li>Reprehenderit qui in ea voluptate velit </li>
 									<li>Voluptatem accusantium doloremque </li>
@@ -98,7 +111,7 @@
 					<div class="col-md-6 mb-4">
 						<div class="row">
 							<div class="col-md-5">
-								<img src="images/image1.png" class="img-fluid" alt="">
+								<img src="images/image1.png" class="img-fluid d-block m-auto" alt="">
 							</div>
 							<div class="col-md-7"> 
 								<ul>
@@ -112,7 +125,7 @@
 					<div class="col-md-6 mb-4">
 						<div class="row">
 							<div class="col-md-5">
-								<img src="images/image1.png" class="img-fluid" alt="">
+								<img src="images/image1.png" class="img-fluid d-block m-auto" alt="">
 							</div>
 							<div class="col-md-7"> 
 								<ul>
@@ -126,7 +139,7 @@
 					<div class="col-md-6 mb-4">
 						<div class="row">
 							<div class="col-md-5">
-								<img src="images/image1.png" class="img-fluid" alt="">
+								<img src="images/image1.png" class="img-fluid d-block m-auto" alt="">
 							</div>
 							<div class="col-md-7"> 
 								<ul>
@@ -168,15 +181,13 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script> 
 	
 	<script>
-		$('.box-device').click(function(){       
-			$(this).toggleClass("active");     
+		 
+		$('.menu-bars').click(function(){    
+			$(".menu-mb").addClass("active" , 300);  
 		});
-		$('.btn-view').click(function(){        
-			$('.btn-view').removeClass("active");       
-			$('.row-device').toggleClass("list-alt");  
-			$(this).addClass("active");     
+		$('.closex').click(function(){    
+			$(".menu-mb").removeClass("active" , 300);  
 		});
-
 
 		
 	</script>

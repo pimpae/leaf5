@@ -351,8 +351,7 @@ header .texts span{
 }
 .btn-add-device{
   padding: 9px 12px;
-  gap: 6px; 
-  width: 128px;
+  gap: 6px;  
   height: 44px; 
   background: #39B24A;
   border-radius: 50px;
@@ -365,9 +364,13 @@ header .texts span{
   font-family: IBMP-Bold; 
   margin-left: 20px;
   margin-top: -20px;
+  display: inline-flex;
 }
 .btn-add-device span{
   font-size: 16px;
+}
+.btn-add-device .material-icons{ 
+  line-height: 26px; 
 }
 .device-detail .btn-view{ 
   margin-top: 20px;
@@ -993,6 +996,65 @@ section.main-fluid{
   color: #fff;
 }
 
+.menu-mb{ 
+  z-index: 2222 !important;
+  position: fixed;
+  left: -100%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 303px;
+  height: 100vh;
+  background: #E9ECEF; 
+  padding: 50px 24px;  
+}
+.menu-mb.active{
+  display: block; 
+  left: 0;
+  z-index: 22;
+}
+.menu-mb.active:after{
+  content: "";
+  position: fixed; 
+  right: 0;
+  top: 0; 
+  bottom: 0;
+  width: calc( 100% - 303px) ;
+  height: 100vh;
+  background: rgba(52, 58, 64, 0.5);
+  z-index: 1111 !important;
+}
+.closex{
+  text-align: right;
+  font-size: 24px;
+}
+.end-in{
+  padding: 16px 0px;
+  gap: 8px; 
+  width: 100%;
+  height: 92px; 
+  background: #FFFFFF;
+}
+.end-in h5{
+  font-family: IBMP-Regular;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px; 
+  text-align: center;
+  letter-spacing: -0.31px; 
+  color: #7A7D7E; 
+}
+.end-in h5 span{
+  font-family: fengardo_regular;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px; 
+  color: #DD6437; 
+}
+
+
 /* 
   transition: .33s all ease-out; 
   
@@ -1007,3 +1069,154 @@ section.main-fluid{
   888888888888888888888888888888888888888888888888888888888888888888888888888888
   888888888888888888888888888888888888888888888888888888888888888888888888888888 
 */ 
+@media only screen and (max-width: 1024px) { /* MOBILE */
+  .menu-left{
+    display: none !important;
+  } 
+  section.main{
+    padding-top: 111px;
+    background: #fff;
+    min-height: calc(100vh - 80px);
+  } 
+  header .col-md-6.text-right{
+    display: none;
+  }
+  header .logo{
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: block;
+    margin: auto;
+  }
+  .menu-bars{
+    position: absolute;
+    bottom: 22px;
+    left: 25px;
+  }
+  .menu-logout{
+    position: absolute;
+    bottom: 22px;
+    right: 25px;
+  }
+  
+  .menu-mb .menu-left{
+    position: absolute;
+    display: block !important;
+  } 
+  .menu-mb .menu-left{
+    position: relative;
+    display: block !important;
+  } 
+  .menu-mb .menu-left ul.menu li a{
+    display: block !important; 
+  }
+  .menu-mb .menu-left ul.menu li {
+    padding-left: 45px; 
+  }
+  .menu-mb .menu-left ul.menu li span { 
+    left: 0px;
+  }
+  .menu-mb .menu-left ul { 
+    margin-top: -50px;
+  }
+  .device-detail > h6{ 
+    display: none;
+  }
+  .device-detail h1{ 
+    color: #39B24A;
+    font-size: 24px;
+  }
+  .btn-view{
+    display: none;
+  } 
+  .btn-add-device{  
+    margin-top: -95px;
+  }
+  .btn-add-device p{ 
+    width: 34px;
+    height: 34px; 
+    display: none;
+  }
+  .row-device .col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .box-device.active {
+    height: 356px;
+  }
+  .box-device h3 { 
+    margin-bottom: -5px;
+    padding-left: 49px; 
+  } 
+  .box-device h2 { 
+    top: 75px; 
+  }
+  .box-device .img { 
+    border: 0px solid #E9ECEF;
+    border-radius: 0px;
+    width: 25px;
+    height: 39px;
+    object-fit: cover;
+  } 
+  .box-device h4 {
+    padding-left: 49px; 
+  }
+  .box-device h2 { 
+    left: 64px; 
+  }
+  .box-device hr {
+    margin-left: 0px;
+    border-top: 1px solid #C9D1D7;
+    margin-top: 32px;
+  }
+  .box-device .option {
+    padding-left: 0px; 
+  }
+  .box-device h5 { 
+    font-size: 16px; 
+    color: #DD6437;
+  }
+  .box-device .op .text-right h5 { 
+    text-align: left;
+    font-size: 12px; 
+    color: #B5BBC1; 
+  }
+  .subscription.pt-5{
+    padding-top: 0px !important;
+  }
+  .subscription h1 { 
+    font-size: 24px; 
+    text-align: left; 
+    color: #39B24A;
+    line-height: 35px;
+    margin-bottom:16px;
+  }
+  .subscription .row.justify-content-center{
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .subscription .package { 
+    border: 1px solid #626262 !important;
+    margin-bottom: 16px;
+    border-radius: 6px !important;
+  }
+  .subscription .best-value { 
+    border: 1px solid #39B24A !important;
+    margin-top: 26px;
+    border-radius: 0px 0px 6px 6px !important;
+  }
+  .subscription .package.best-value .best { 
+    outline: 1px solid #39B24A !important;
+  }
+  .subscription .img-fluid {
+    background: #D9D9D9;
+    border-radius: 6px;
+    width: 100%;
+  }
+}
+
+
+
+/* 
+IPAD 
+*/
