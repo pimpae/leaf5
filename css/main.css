@@ -47,7 +47,7 @@ header img.logo{
   height: 32px; 
 }
 .menu-left{
-  position: absolute;
+  position: fixed;
   z-index: 5;
   left: 0;
   top: 80px;
@@ -98,7 +98,7 @@ header img.logo{
   color: #39B24A;
 } 
 section.main{
-  padding-top: 32px; 
+  padding-top: 111px;
   background: #F5F5F5;
   min-height: calc(100vh - 80px);
 } 
@@ -535,8 +535,94 @@ header .texts span{
 .row-device.list-alt .col-12{
   flex: 0 0 100%;
   max-width: 100%;
+} 
+.row-profile{
+  padding-bottom: 100px;
 }
- 
+.row-profile label{
+  font-family: IBMP-Regular;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px; 
+  letter-spacing: -0.31px; 
+  color: #212529; 
+}
+.row-profile label{
+  font-family: IBMP-Regular;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px; 
+  letter-spacing: -0.31px; 
+  color: #212529; 
+}
+.btn-pro{
+  padding: 9px 12px;
+  gap: 6px;  
+  height: 44px; 
+  border: 1px solid rgba(52, 58, 64, 0.5);
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  font-family: IBMP-Bold;
+  letter-spacing: -0.31px; 
+  color: rgba(52, 58, 64, 0.5);
+}
+.icons-text{
+  display: inline-flex;
+} 
+.icons-text span{
+  margin-top: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+.row-profile h5{
+  font-family: fengardo_regular; 
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px; 
+  letter-spacing: -0.45px; 
+  color: #212529; 
+}
+.row-profile h6{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.31px; 
+  color: #212529;
+  font-family: IBMP-Regular; 
+}
+.row-profile h6 span{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px; 
+  font-family: IBMP-Regular;
+  color: #868C92; 
+}
+.btn-danger{
+  padding: 9px 12px;
+  gap: 6px;  
+  height: 44px; 
+  background-color: transparent;
+  border: 1px solid #DC3545;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  font-family: IBMP-Bold;
+  letter-spacing: -0.31px; 
+  color: #DC3545; 
+
+}
  
   
  
