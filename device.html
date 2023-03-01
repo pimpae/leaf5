@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> LEAF5 </title> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="css/main.css" rel="stylesheet" type="text/css" />   
+    <link rel="icon" type="image/x-icon" href="images/logo.png"> 
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>   
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css"> 
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	
+</head>
+<body>
+	 
+	<header class="fixed-top"> 
+		<div class="row">
+			<div class="col-md-6">
+				<a href="#"><img src="images/logo.png" class="logo" alt="logo"></a>  
+			</div>
+			<div class="col-md-6 text-right">
+				<div class="d-flex justify-content-end">
+					<div class="texts">
+						Subscription end in <br>
+						<span>193</span>
+						days
+					</div>
+					<a href="#" class="notifications">
+						<span class="material-icons"> notifications </span>
+					</a>
+					<a href="#" class="btn btn-user"> 
+						<span class="material-icons">
+							account_circle 
+						</span>
+						<p>User name</p>
+					</a>  
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<div class="menu-left">
+			<ul class="menu"> 
+				<li>
+					<span class="material-icons">
+						account_circle
+					</span>
+					<a href="profile.html">Profile</a>
+				</li>
+				<li class="active">
+					<span class="material-icons">
+						devices
+					</span>
+					<a href="device-detail.html">Device</a>
+				</li>
+				<li>
+					<span class="material-icons">
+						contactless
+					</span>
+					<a href="#">Connect</a>
+				</li>
+				<li>
+					<span class="material-icons">
+						date_range
+					</span>
+					<a href="#">Subscription</a>
+				</li>
+				<li>
+					<span class="material-icons">
+						analytics
+					</span>
+					<a href="#">Status</a>
+				</li>
+			</ul>
+		</div>
+
+
+		<section class="main-fluid">
+			<div class="container-fluid">  
+				<div class="row">
+					<div class="col-md-3">
+						<div class="device-menu">
+							<a href="#" class="all-back">
+								<span class="material-icons">
+									arrow_back
+								</span>
+								<p>All Devices</p>
+							</a>
+							<div class="lighting">
+								<h4>Lighting  01</h4>
+
+								<h6>HydraOS_46CEE3 <span>Emerson Effect</span></h6>
+								<h6>bt_count: 22 model ver. 224 <i>Sync: 25 second ago</i></h6> 
+								
+							</div>
+
+							<ul class="nav nav-pills flex-column" id="myTab" role="tablist">
+								<li class="nav-item">
+									<a class="nav-link " id="tab1-tab" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Location Detail</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" id="tab2-tab" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Electricity Cost </a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" id="tab3-tab" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false">Simulation</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link active" id="tab4-tab" data-toggle="tab" href="#tab4" role="tab" aria-controls="tab4" aria-selected="true">Engine Modification</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" id="tab5-tab" data-toggle="tab" href="#tab5" role="tab" aria-controls="tab5" aria-selected="false">Manually Customize</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link deactivate" id="tab6-tab" data-toggle="tab" href="#tab6" role="tab" aria-controls="tab6" aria-selected="false">Deactivate Device</a>
+								</li>
+							</ul>
+
+
+							 
+						</div>
+					</div>
+					<div class="col-md-9">
+						<div class="tab-content" id="myTabContent">
+							<div class="tab-pane fade" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+								<div class="row">
+									<div class="col-md-12"> 
+										<h1>Location Detail</h1>
+									</div>	 
+								</div>
+							</div> 
+							<div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab1-tab">
+								<div class="row">
+									<div class="col-md-12"> 
+										<h1>Electricity Cost</h1>
+									</div>	 
+								</div>
+							</div> 
+							<div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab1-tab">
+								<div class="row">
+									<div class="col-md-12"> 
+										<h1>Simulation</h1>
+									</div>	 
+								</div>
+							</div> 
+							<div class="tab-pane fade show active" id="tab4" role="tabpanel" aria-labelledby="tab1-tab">
+								<div class="row">
+									<div class="col-md-6"> 
+										<h1>Location Detail</h1>
+									</div>	 
+									<div class="col-md-6 text-right"> 
+										<button class="btn btn-pro">Change</button>
+									</div>	
+										
+									<div class="col-12"> 
+										<iframe class="map" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France" width="100%" height="269" frameborder="0" style="border:0" allowfullscreen></iframe>
+									</div>
+									<div class="col-12"> 
+										<h3 class="h3d">Real word</h3>
+									</div>
+									<div class="col-12"> 
+										<div class="row">
+											<div class="col-md-6"> 
+												<p>Grower: ObnikkhHYcq...</p>
+												<p>Date: Sunday, 20 November 2022 ( GMT +02:00 )</p>
+												<p>Latitude, Longitude: ( 23,24 )</p>
+												<p>Town: Al Kufrah Town</p>
+											</div>
+											<div class="col-md-6"> 
+												<p>Country: Unknown Country</p>
+												<p>State: Al Krah</p>
+												<p>Country: Libya</p>
+												<p>Continent: Africa</p>
+											</div>
+										</div> 
+									</div>
+
+									<div class="col-12">
+										<h6 class="sunrise">
+											<span class="material-icons">
+												wb_sunny
+											</span>
+											<p>Sunrise 06:00</p>
+										</h6>
+										<h6 class="sunset">
+											<span class="material-icons">
+												nightlight_round
+											</span>
+											<p>Sunrise 06:00</p>
+										</h6>
+
+										<h2>Engine Modification</h2>
+										<h3>Adjust light feeding schedule by enter following required parameters.</h3>
+									</div>
+
+									<div class="col-12">
+										<div class="row">
+											<label class="col-12 text-danger"> Growlight Model:</label>
+											<div class="col-6">
+                                                <select class="selectpicker" title="RAYE 6ooW (L5- RE-22-6ooS) + HydraOS V2.0" data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2"> 
+													<option value="">RAYE 6ooW (L5- RE-22-6ooS) + HydraOS V2.0</option>
+													<option value="">RAYE 6ooW (L5- RE-22-6ooS) + HydraOS V2.0</option>
+													<option value="">RAYE 6ooW (L5- RE-22-6ooS) + HydraOS V2.0</option>
+													<option value="">RAYE 6ooW (L5- RE-22-6ooS) + HydraOS V2.0</option>
+													<option value="">RAYE 6ooW (L5- RE-22-6ooS) + HydraOS V2.0</option>
+												</select> 
+											</div>
+										</div>
+										<div class="row">
+											<label class="col-12 text-danger"> Power:</label>
+											<div class="col-6">
+                                                <select class="selectpicker" title="40% Veg Week 2" data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2"> 
+													<option value="">40% Veg Week 2</option>
+													<option value="">40% Veg Week 2</option>
+													<option value="">40% Veg Week 2</option>
+													<option value="">40% Veg Week 2</option>
+													<option value="">40% Veg Week 2</option>
+												</select> 
+											</div>
+										</div>
+									</div>
+									<div class="col-12"> 
+										<h3 class="h3d">Real word</h3>
+									</div>
+
+									<div class="col-12">
+										<div class="custom-control custom-switch">
+											<input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
+											<label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
+										</div>
+									</div>
+
+									<div class="col-12">
+										<div class="custom-control custom-switch">
+											<input type="checkbox" class="custom-control-input" id="customSwitch2" checked>
+											<label class="custom-control-label" for="customSwitch2">Emerson Effect | Dark Reversion Feature</label>
+										</div>
+									</div>
+
+									<div class="col-12">
+										<div class="custom-control custom-switch">
+											<input type="checkbox" class="custom-control-input" id="customSwitch3"  >
+											<label class="custom-control-label text-danger" for="customSwitch3">
+												Photosystem | Enhancement Feature ( เพิ่มประสิทธิภาพการสังเคราะห์แสง ระหว่างวันด้วย Far-Red increase efficiency of Adenosine 5-tripshosphate (ATP) )
+											</label>
+										</div>
+									</div>
+
+									<div class="col-12">
+										<div class="custom-control custom-switch">
+											<input type="checkbox" class="custom-control-input" id="customSwitch4" checked>
+											<label class="custom-control-label" for="customSwitch4">NEW! Experiencing Clond Feature | 3% Chance of hitting Clond per minute</label>
+										</div>
+									</div>
+									<div class="col-12"> 
+										<h3 class="h3y">Simulation</h3>
+									</div>
+
+									<div class="col-12">
+										<div class="row">
+											<label class="col-12"> Simulation Date:</label>
+											<div class="col-6">
+                                                <select class="selectpicker" title="Simulation Date" data-show-subtext="true"  > 
+													<option value="" selected>11/20/2022</option>
+													<option value="">11/20/2022</option>
+													<option value="">11/20/2022</option>
+													<option value="">11/20/2022</option>
+													<option value="">11/20/2022</option>
+												</select> 
+											</div>
+										</div> 
+									</div>
+
+									<div class="col-12">
+										<div class="row">
+											<label class="col-6"> Latitude: <span class="right"><a href="#">Google Map</a></span></label> 
+										</div> 
+										<div class="row"> 
+											<div class="col-6">
+                                                <select class="selectpicker" title="Latitude:" data-show-subtext="true"  > 
+													<option value=" selected">23</option>
+													<option value="">23:</option>
+													<option value="">23:</option>
+													<option value="">23:</option>
+													<option value="">23:</option>
+												</select> 
+											</div>
+										</div> 
+									</div>
+
+									<div class="col-12">
+										<div class="row">
+											<label class="col-12"> Day Time Start on:</label>
+											<div class="col-6">
+                                                <select class="selectpicker" title="Day Time Start on" data-show-subtext="true"  > 
+													<option value="" selected>11:00 AM</option>
+													<option value="">11:00 AM</option>
+													<option value="">11:00 AM</option>
+													<option value="">11:00 AM</option>
+													<option value="">11:00 AM</option>
+												</select> 
+											</div>
+										</div> 
+									</div>
+
+									<div class="col-12">
+										<div class="row">
+											<label class="col-12"> Day Time Duration:</label>
+											<div class="col-6">
+                                                <select class="selectpicker" title="Day Time Duration" data-show-subtext="true"  > 
+													<option value="" selected>12 (Flowering)</option>
+													<option value="">12 (Flowering)</option>
+													<option value="">12 (Flowering)</option>
+													<option value="">12 (Flowering)</option>
+													<option value="">12 (Flowering)</option>
+												</select> 
+											</div>
+										</div> 
+									</div>
+
+
+									<div class="col-12 mt-2">
+										<div class="row">
+											<div class="col-md-6"> 
+												<a href="#" class="btn btn-update btn-block">Update</a>
+											</div>
+										</div>
+									</div>
+									
+								</div>
+
+
+							</div> 
+							<div class="tab-pane fade" id="tab5" role="tabpanel" aria-labelledby="tab1-tab">
+								<div class="row">
+									<div class="col-md-12"> 
+										<h1>Manually Customize</h1>
+									</div>	 
+								</div>
+							</div> 
+							<div class="tab-pane fade" id="tab6" role="tabpanel" aria-labelledby="tab1-tab">
+								<div class="row">
+									<div class="col-md-12"> 
+										<h1>Deactivate Device</h1>
+									</div>	 
+								</div>
+							</div> 
+						</div>
+					</div>
+				</div> 
+			</div>
+		</section>
+
+	</main> 
+ 
+
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>  
+
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>  
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script> 
+	
+	<script>
+		$('.box-device').click(function(){       
+			$(this).toggleClass("active");     
+		});
+		$('.btn-view').click(function(){        
+			$('.btn-view').removeClass("active");       
+			$('.row-device').toggleClass("list-alt");  
+			$(this).addClass("active");     
+		});
+
+
+		
+	</script>
+ 
+</body>
+</html>
