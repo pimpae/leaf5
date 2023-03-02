@@ -1218,12 +1218,38 @@ section.main-fluid{
     background: #fff;
     min-height: calc(100vh - 80px);
   }
-  .tab-pane p span{
-    width: 40%;
-    float: left;
+  .tab-pane p span{ 
+    position: absolute;
+    left: 15px;
   }
-
-
+  .tab-pane p { 
+    font-size: 13px; 
+    margin-bottom: 0px; 
+    padding-left: 40%; 
+  }
+  .device-menu .nav.hide .nav-item .nav-link{
+    display: none !important;
+  }
+  .device-menu .nav .nav-item .nav-link.active{
+    display: block !important;
+  }
+  .device-menu .nav {  
+    position: relative; 
+  }
+  .device-menu .nav:after { 
+    content: "";
+    z-index: 100;
+    position: absolute;
+    border: none !important;
+    width: 24px;
+    height: 24px;
+    right: 24px; 
+    top: 24px;
+    background: url(../images/keyboard_arrow_down2.png);
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: 24px 24px !important;
+  }
 }
 
 

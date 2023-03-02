@@ -155,7 +155,7 @@
 								
 							</div>
 
-							<ul class="nav nav-pills flex-column" id="myTab" role="tablist">
+							<ul class="nav nav-pills flex-column hide" id="myTab" role="tablist">
 								<li class="nav-item">
 									<a class="nav-link " id="tab1-tab" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Location Detail</a>
 								</li>
@@ -224,14 +224,14 @@
 											<div class="col-md-6"> 
 												<p><span>Grower:</span> ObnikkhHYcq...</p>
 												<p><span>Date:</span> Sunday, 20 November 2022 ( GMT +02:00 )</p>
-												<p>Latitude, Longitude: ( 23,24 )</p>
-												<p>Town: Al Kufrah Town</p>
+												<p><span>Latitude, Longitude:</span> ( 23,24 )</p>
+												<p><span>Town:</span> Al Kufrah Town</p>
 											</div>
 											<div class="col-md-6"> 
-												<p>Country: Unknown Country</p>
-												<p>State: Al Krah</p>
-												<p>Country: Libya</p>
-												<p>Continent: Africa</p>
+												<p><span>Country:</span> Unknown Country</p>
+												<p><span>State:</span> Al Krah</p>
+												<p><span>Country:</span> Libya</p>
+												<p><span>Continent:</span> Africa</p>
 											</div>
 										</div> 
 									</div>
@@ -257,7 +257,7 @@
 									<div class="col-12">
 										<div class="row">
 											<label class="col-12 text-danger"> Growlight Model:</label>
-											<div class="col-6">
+											<div class="col-md-6 col-12">
                                                 <select class="selectpicker" title="RAYE 6ooW (L5- RE-22-6ooS) + HydraOS V2.0" data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2"> 
 													<option value="">RAYE 6ooW (L5- RE-22-6ooS) + HydraOS V2.0</option>
 													<option value="">RAYE 6ooW (L5- RE-22-6ooS) + HydraOS V2.0</option>
@@ -269,7 +269,7 @@
 										</div>
 										<div class="row">
 											<label class="col-12 text-danger"> Power:</label>
-											<div class="col-6">
+											<div class="col-md-6 col-12">
                                                 <select class="selectpicker" title="40% Veg Week 2" data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2"> 
 													<option value="">40% Veg Week 2</option>
 													<option value="">40% Veg Week 2</option>
@@ -320,7 +320,7 @@
 									<div class="col-12">
 										<div class="row">
 											<label class="col-12"> Simulation Date:</label>
-											<div class="col-6">
+											<div class="col-md-6 col-12">
                                                 <select class="selectpicker" title="Simulation Date" data-show-subtext="true"  > 
 													<option value="" selected>11/20/2022</option>
 													<option value="">11/20/2022</option>
@@ -337,7 +337,7 @@
 											<label class="col-6"> Latitude: <span class="right"><a href="#">Google Map</a></span></label> 
 										</div> 
 										<div class="row"> 
-											<div class="col-6">
+											<div class="col-md-6 col-12">
                                                 <select class="selectpicker" title="Latitude:" data-show-subtext="true"  > 
 													<option value=" selected">23</option>
 													<option value="">23:</option>
@@ -352,7 +352,7 @@
 									<div class="col-12">
 										<div class="row">
 											<label class="col-12"> Day Time Start on:</label>
-											<div class="col-6">
+											<div class="col-md-6 col-12">
                                                 <select class="selectpicker" title="Day Time Start on" data-show-subtext="true"  > 
 													<option value="" selected>11:00 AM</option>
 													<option value="">11:00 AM</option>
@@ -367,7 +367,7 @@
 									<div class="col-12">
 										<div class="row">
 											<label class="col-12"> Day Time Duration:</label>
-											<div class="col-6">
+											<div class="col-md-6 col-12">
                                                 <select class="selectpicker" title="Day Time Duration" data-show-subtext="true"  > 
 													<option value="" selected>12 (Flowering)</option>
 													<option value="">12 (Flowering)</option>
@@ -432,7 +432,10 @@
 		});
 
 
-		
+		$('.device-menu .nav.hide').click(function(){    
+			$(".device-menu .nav").toggleClass("hide");  
+		});
+ 
 	</script>
  
 </body>
