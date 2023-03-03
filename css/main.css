@@ -341,6 +341,9 @@ header .texts span{
   letter-spacing: -0.31px; 
   color: #B5BBC1;
 }
+.device-detail h6 a{  
+  color: #B5BBC1;
+}
 .device-detail h1{ 
   font-family: fengardo_regular;
   font-weight: 400;
@@ -421,6 +424,9 @@ header .texts span{
   letter-spacing: -0.45px; 
   color: #626262;
   margin-bottom: 18px;
+}
+.box-device h3 a{ 
+  color: #626262; 
 }
 .box-device h4{
   padding-left: 88px;
@@ -749,6 +755,7 @@ section.main-fluid{
   gap: 16px;  
   background: #EAFFED;
   border-bottom: 1px solid #C4C4C4;
+  position: relative;
 }
 .device-menu .lighting h4{
   font-family: fengardo_regular; 
@@ -1053,6 +1060,23 @@ section.main-fluid{
   line-height: 24px; 
   color: #DD6437; 
 }
+.lighting .btn-edit{
+  width: 32px;
+  height: 32px; 
+  background: #FFFFFF;
+  border-radius: 8px;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+.lighting .btn-edit span{
+  font-size: 24px;
+  color: #CED4DA;
+}
 
 
 /* 
@@ -1225,7 +1249,7 @@ section.main-fluid{
   .tab-pane p { 
     font-size: 13px; 
     margin-bottom: 0px; 
-    padding-left: 40%; 
+    padding-left: 50%; 
   }
   .device-menu .nav.hide .nav-item .nav-link{
     display: none !important;
@@ -1249,6 +1273,25 @@ section.main-fluid{
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: 24px 24px !important;
+  }
+  .tab-pane h6.sunrise{ 
+    width: 49%;
+    display: inline-flex;
+    float: left;
+    margin-top: 15px;
+  }
+  .tab-pane h6.sunset{ 
+    width: 50%;
+    display: inline-flex;
+    float: left;
+    margin-top: 15px;
+  }
+  .tab-pane h6.sunrise p { 
+    padding-left: 0px;
+    border-right: 0px;
+  }
+  .tab-pane h6.sunset p { 
+    padding-left: 0px;
   }
 }
 
