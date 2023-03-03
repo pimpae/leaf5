@@ -38,7 +38,7 @@
 					<span class="material-icons">
 						devices
 					</span>
-					<a href="device-detail.html">Device</a>
+					<a href="all-devices.html">Device</a>
 				</li>
 				<li>
 					<span class="material-icons">
@@ -118,7 +118,7 @@
 					<span class="material-icons">
 						devices
 					</span>
-					<a href="device-detail.html">Device</a>
+					<a href="all-devices.html">Device</a>
 				</li>
 				<li>
 					<span class="material-icons">
@@ -193,28 +193,28 @@
 					</div>
 					<div class="col-md-9">
 						<div class="tab-content" id="myTabContent">
-							<div class="tab-pane fade" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+							<div class="tab-pane fade" id="tab1" role="tabpanel"  >
 								<div class="row">
 									<div class="col-md-12"> 
 										<h1>Location Detail</h1>
 									</div>	 
 								</div>
 							</div> 
-							<div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab1-tab">
+							<div class="tab-pane fade" id="tab2" role="tabpanel"  >
 								<div class="row">
 									<div class="col-md-12"> 
 										<h1>Electricity Cost</h1>
 									</div>	 
 								</div>
 							</div> 
-							<div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab1-tab">
+							<div class="tab-pane fade" id="tab3" role="tabpanel"  >
 								<div class="row">
 									<div class="col-md-12"> 
 										<h1>Simulation</h1>
 									</div>	 
 								</div>
 							</div> 
-							<div class="tab-pane fade show active" id="tab4" role="tabpanel" aria-labelledby="tab1-tab">
+							<div class="tab-pane fade show active" id="tab4" role="tabpanel"  >
 								<br>
 								<div class="row">
 									<div class="col-6"> 
@@ -403,14 +403,14 @@
 
 
 							</div> 
-							<div class="tab-pane fade" id="tab5" role="tabpanel" aria-labelledby="tab1-tab">
+							<div class="tab-pane fade" id="tab5" role="tabpanel"  >
 								<div class="row">
 									<div class="col-md-12"> 
 										<h1>Manually Customize</h1>
 									</div>	 
 								</div>
 							</div> 
-							<div class="tab-pane fade" id="tab6" role="tabpanel" aria-labelledby="tab1-tab">
+							<div class="tab-pane fade" id="tab6" role="tabpanel"  >
 								<div class="row">
 									<div class="col-md-12"> 
 										<h1>Deactivate Device</h1>
@@ -440,12 +440,20 @@
 		});
 		$('.closex').click(function(){    
 			$(".menu-mb").removeClass("active" , 300);  
-		});
-
-
+		}); 
 		$('.device-menu .nav.hide').click(function(){    
 			$(".device-menu .nav").toggleClass("hide");  
 		});
+		
+
+		var url = window.location.href;   
+		var id = url.substring(url.lastIndexOf('#') + 1);  
+		$("#myTab .nav-link").removeClass("active");  
+		$("#myTab #tab1-tab").addClass("active");  
+
+		$(".tab-content .tab-pane").removeClass("show","active");    
+		$("#tab"+id).addClass("active show");
+
  
 	</script>
  
