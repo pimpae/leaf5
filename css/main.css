@@ -1293,6 +1293,11 @@ section.main-fluid{
   .tab-pane h6.sunset p { 
     padding-left: 0px;
   }
+  .box-device .option h3 {
+    font-size: 16px;
+    padding-left: 0px;
+    margin-bottom: 10px;
+  }
 }
 
 
